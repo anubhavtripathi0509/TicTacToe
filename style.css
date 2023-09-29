@@ -1,4 +1,4 @@
-*,*::before::after{
+*,*::before,*::after{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -9,7 +9,6 @@
     width: 100vw;
     height: 100vh;
     background-image: url(./assets/bg.jpg);
-    /* background-color: black; */
     background-size: cover;
     background-position: center;
     display: grid;
@@ -78,9 +77,13 @@
     border: 1px solid rgba(255, 255, 255, 0.25);
     padding: 0.5rem 2rem;
     cursor: pointer;
-    display: none;
+    /* display: none; */
 }
 
 .btn.active{
     display: flex;
+}
+
+.win{
+    background-color: rgba(0, 255, 0, 0.3);
 }
